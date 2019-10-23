@@ -1,0 +1,93 @@
+/* EDnotSheeran@Calculadora */
+@charset "UTF-8";
+@font-face{
+    font-family: 'Apple';
+    src: url(font_apple.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Apple';
+}
+body{
+    background-color: #f5f5f5;
+}
+/* caculadora */
+#calculadora{
+    margin: 0 auto;
+    background-color: #000000;
+    width: 375px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25vh 15vh 15vh 15vh 15vh;
+    grid-template-areas: 
+    "visor visor visor visor"
+    "botao-01 botao-02 botao-03 botao-04"
+    "botao-05 botao-06 botao-07 botao-08"
+    "botao-09 botao-10 botao-11 botao-12"
+    "botao-13 botao-14 botao-15 botao-16"
+    "botao-17 botao-18 botao-19 botao-20";
+}
+/* visor */
+#visor{
+    grid-area: visor;
+    font-size: 80px;
+    color: #f5f5f5;
+    padding: 0 5%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+/* botao */
+[class*=botao]{
+    margin: 10%;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: #333333;
+}
+/* botao cinza */
+[class*=-cinza]{
+    background-color: #a6a6a6;
+    color: #000000;
+}
+/* botao laranja */
+[class*=-laranja]{
+    background-color: #ff9500;
+}
+/* todos os botoes */
+#botao-01{grid-area: botao-01;}
+#botao-02{grid-area: botao-02;}
+#botao-03{grid-area: botao-03;}
+#botao-04{grid-area: botao-04;}
+#botao-05{grid-area: botao-05;}
+#botao-06{grid-area: botao-06;}
+#botao-07{grid-area: botao-07;}
+#botao-08{grid-area: botao-08;}
+#botao-09{grid-area: botao-09;}
+#botao-10{grid-area: botao-10;}
+#botao-11{grid-area: botao-11;}
+#botao-12{grid-area: botao-12;}
+#botao-13{grid-area: botao-13;}
+#botao-14{grid-area: botao-14;}
+#botao-15{grid-area: botao-15;}
+#botao-16{grid-area: botao-16;}
+#botao-17{grid-area: botao-17;;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+}
+#botao-18{grid-area: botao-18;background-color: #333333;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+}
+#botao-19{grid-area: botao-19;background-color: #333333;}
+#botao-20{grid-area: botao-20;background-color: #ff9500;}
+
+

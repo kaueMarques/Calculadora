@@ -2,7 +2,7 @@
 @charset "UTF-8";
 @font-face{
     font-family: 'Apple';
-    src: url(font_apple.otf);
+    src: url(src/font_apple.otf);
 }
 *{
     margin: 0;
@@ -11,7 +11,7 @@
     font-family: 'Apple','Open Sans';
 }
 body{
-    background-color: #f5f5f5;
+    background-color: #333333;
 }
 /* caculadora */
 #calculadora{
@@ -77,17 +77,19 @@ body{
 #botao-14{grid-area: botao-14;}
 #botao-15{grid-area: botao-15;}
 #botao-16{grid-area: botao-16;}
-#botao-17{grid-area: botao-17;;
+#botao-17{
+    grid-area: botao-17;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     margin-right: 0;
 }
-#botao-18{grid-area: botao-18;background-color: #333333;
+#botao-18{
+    grid-area: botao-18;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-left: 0;
 }
-#botao-19{grid-area: botao-19;background-color: #333333;}
-#botao-20{grid-area: botao-20;background-color: #ff9500;}
+#botao-19{grid-area: botao-19;}
+#botao-20{grid-area: botao-20;}
 
 

@@ -154,10 +154,12 @@ botao[20].onclick = function(){
         var numero = query.split("x");
         query = parseFloat(numero[0]) * parseFloat(numero[1]);
     }
+    // divisao
     else if(query.indexOf("/")!==-1){
         var numero = query.split("/");
         query = parseFloat(numero[0]) / parseFloat(numero[1]);
     }
+    // volta a receber  operadores e mostra o resultado
     ocupado = false;
     mostraVisor(query);
 }

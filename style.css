@@ -57,7 +57,7 @@ html,body{
 }
 /* botao largo */
 [class*=-largo]{
-    width: 195px;
+    width: 190px;
     grid-column: span 2 / auto;
 }
 /* botao cinza */
@@ -81,4 +81,29 @@ html,body{
 [class*=-col4]{
     grid-column: 4;
 }
-
+/* Iphone 6*/
+@media screen and (max-width:375px){
+    #botoes{
+        grid-template-columns: repeat(4,90px);
+    }
+    [class*=botao]{
+        width: 80px;
+        height: 80px;
+    }
+    [class*=-largo]{
+        width: 170px;
+    }
+}
+/* Iphone 5*/
+@media screen and (max-width:320px){
+    #botoes{
+        grid-template-columns: repeat(4,80px);
+    }
+    [class*=botao]{
+        width: 70px;
+        height: 70px;
+    }
+    [class*=-largo]{
+        width: 150px;
+    }
+}

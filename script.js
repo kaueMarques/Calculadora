@@ -10,6 +10,10 @@ btn_value.map(value=>{
     
     if(value=='0')
         btn.classList = btn.classList + '-largo'
-
+    if(value=='ac'|value=='+/-'|value=='%')
+        btn.classList = btn.classList + '-cinza'
+    if(value=='&divide;'|value=='&times;'|value=='&minus;'|value=='&plus;'|value=='=')
+        btn.classList = btn.classList + '-laranja'
+        
     botoes.appendChild(btn)
 })

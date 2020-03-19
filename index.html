@@ -3,40 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora</title>
     <link rel="icon" href="src/favicon.png" type="image/png">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="historico">
-        <!-- fazer historico dos calculos -->
-    </div>
-    <div id="calculadora">
-        <div id="visor">
-        </div>
-        <div class="botao-cinza" id="botao-01">AC</div>
-        <div class="botao-cinza" id="botao-02">+/-</div>
-        <div class="botao-cinza" id="botao-03">%</div>
-        <div class="botao-laranja" id="botao-04">&divide;</div>
-        <div class="botao" id="botao-05">7</div>
-        <div class="botao" id="botao-06">8</div>
-        <div class="botao" id="botao-07">9</div>
-        <div class="botao-laranja" id="botao-08">&times;</div>
-        <div class="botao" id="botao-09">4</div>
-        <div class="botao" id="botao-10">5</div>
-        <div class="botao" id="botao-11">6</div>
-        <div class="botao-laranja" id="botao-12">&minus;</div>
-        <div class="botao" id="botao-13">1</div>
-        <div class="botao" id="botao-14">2</div>
-        <div class="botao" id="botao-15">3</div>
-        <div class="botao-laranja" id="botao-16">&plus;</div>
-        <div class="botao" id="botao-17">0</div>
-        <div class="botao" id="botao-18"></div>
-        <div class="botao" id="botao-19">,</div>
-        <div class="botao-laranja" id="botao-20">=</div>        
-    </div>
+    <form id="calculadora">
+        <textarea id="visor"></textarea>
+        <div id="botoes"></div>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>

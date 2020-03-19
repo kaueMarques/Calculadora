@@ -32,6 +32,7 @@ html,body{
     border: none;
     background-color: transparent;
     color: #f5f5f5;
+    overflow: hidden;
 }
 /* visor ao ser selecionado*/
 #visor:focus{

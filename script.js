@@ -51,3 +51,7 @@ function calcular(query){
     }
     return resposta
 }
+// impede o pinch do zoom
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
